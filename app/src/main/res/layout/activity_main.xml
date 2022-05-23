@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inputInstruction"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/inputBox"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="4"
+            android:textAlignment="center"
+            android:hint="@string/hintValue"
+            android:inputType="numberDecimal"
+            android:text="@string/defaultValue"
+            android:importantForAutofill="no"
+            android:layout_marginEnd="10dp"/>
+
+        <Spinner
+            android:id="@+id/unitSelector"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:spinnerMode="dropdown"
+            android:layout_weight="2"
+            android:entries="@array/units"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="convert"
+        tools:ignore="OnClick,UsingOnClickInXml,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/resultOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

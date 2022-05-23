@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroBasics</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="send">Send</string>
+    <string name="reset">Reset</string>
+    <string name="inputInstruction">Input value and select unit</string>
+    <string name="hintValue">Value</string>
+    <string name="convert">Convert</string>
+    <string name="result">Result</string>
+    <string name="defaultValue">0</string>
+
+    <string-array name="units">
+        <item>°c</item>
+        <item>°f</item>
+    </string-array>
+</resources>
